@@ -1,0 +1,9 @@
+Em Python, o comando input() é utilizado para obter uma entrada do usuário, pausando a execução do programa até que ele insira algum dado e pressione Enter. O valor retornado é sempre do tipo string, e contém os dados inseridos pelo usuário.
+
+Sintaxe: input()
+
+Exemplo:
+entrada = input("Digite sua altura: ")
+type(entrada) 
+
+# saída: <class 'str'>
