@@ -1,5 +1,0 @@
-Menor: 1
-Maior: 4
-Qtde: 4
-Soma: 10
-Média: 2.5

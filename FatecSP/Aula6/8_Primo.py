@@ -1,14 +1,16 @@
 def primo(num: int):
-    divisores:list = []
+    divisores: str = ""
+    i = 2
     if num < 2:
         return "não é primo, pois é um ou nulo/negativo."
 
-    for i in range(2, num):
+    while i < num:
         if num % i == 0:
-            divisores.append(i)
+            divisores += f"{i} "
+        i+=1
 
     if divisores:
-        return f"não é primo, pois é divisível por: {str(divisores)[1:-1]}"
+        return f"não é primo, pois é divisível por: {divisores}"
     else:
         return "é primo"
 
@@ -21,7 +23,7 @@ def main():
 
     print(resultado)
 
-    with open("Primo.txt", "w") as output: # Primo.txt = nome, w = metodo (write, daria overwrite se já existisse algo em Primo.txt)
+    with open("Primo_output.txt", "w") as output: # Primo_output.txt = nome, w = metodo (write, daria overwrite se já existisse algo em Primo_output.txt)
         output.write(resultado)
 
 main()

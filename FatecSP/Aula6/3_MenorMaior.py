@@ -1,14 +1,24 @@
 def main():
     print("________________Maior e Menor___________________")
 
-    i = 1
-    listaNums :list = []
+    i = 0
     x: int = int(input("Informe quantos valores reais deseja inserir: "))
-    while i <= x:
-        listaNums.append(float(input(f"Informe o {i}° valor: ")))
+
+    menor = 0
+    maior = 0
+    while i < x:
+        nums = float(input(f"Informe o {i+1}° valor: "))
+        if i == 0:
+            menor = nums
+            maior = nums
+
+        if nums < menor:
+            menor = nums
+        if nums > maior:
+            maior = nums
         i += 1
 
-    resultado: str = f"\nMenor: {min(listaNums)}, Maior: {max(listaNums)}"
+    resultado = f"Menor: {menor}\nMaior: {maior}"
 
 
     print(resultado)

@@ -1,2 +1,0 @@
-Valores divisíveis por 2 ou 3:
-4.0, 3.0, 20.0

@@ -2,9 +2,9 @@ def main():
     print("___________________Soma pares em faixa_____________________")
     limite = 0
     msg = ""
-    while limite < 12:
-        if msg:
-            print(msg) # kkkk lógica mais intrínsica possível
+    while limite < 100:
+        if msg: #vazia de inicio...
+            print(msg)
 
         msg = "\nErro! Valor deve ser no mínimo 100!"
 
@@ -12,9 +12,11 @@ def main():
 
 
     acc = 0
-    for i in range(1,limite):
+    i = 1
+    while i <= limite:
         if i % 2 == 0:
             acc += i
+        i+=1
 
     resultado = f"Somatório valores pares: {acc}"
     print(resultado)
